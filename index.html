@@ -1,208 +1,206 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My first HTML</title>
+	<title>Curriculum vitae</title>
 	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="hand-pointer-32-221064.png">
 	<style type="text/css">
-			
-		@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Dancing+Script');
-
-       	.common {
-    		max-width: 1615px;
-    		min-width: 1200px;
-    		height: 830px;
-    		font-family: 'Cormorant Garamond', serif;
-    	}
-    	
-    	.curric{
-    		color: white;
-    		background-color: #3d4f5b;
-    		font-size: 25px;
-    		font-family: 'Dancing Script', cursive;
-    		text-align: center;
-    		height: 60px;
-    		margin-top: -25px;
-    		margin-left: -8px;
-    		margin-right: -9px;
-    	}
-    	
-    	.curric > p{
-    		position: relative;
-    		top: 15px;
-    	}
-    	
-    	.info{
-    		display: flex;
-		}
-		
-		.left{
-			width: 300px;
-			background: linear-gradient(83deg, rgba(0,0,0,1) 0%, rgba(227,227,227,1) 100%, rgba(227,227,227,1) 100%);
-			margin-left: -8px;
-		}
-		
-		img{
-			width: 180px;
-			height: 180px;
-			border: 3px #c7c7c7 solid;
-			border-radius: 77px 77px 77px 77px;
-			margin-left: 60px;
-			margin-top: 25px;
-		}
-		
-		.name, .interest p{
-			text-shadow: 2px 2px 3px black;
-		}
-		
-		.name{
-			width: 200px;
-			color: white;
-			font-size: 65px;
-			text-align: left;
-			margin-left: 60px;
-			margin-top: -25px;
-		}
-		
-		.name > p{
-			border-bottom: 3px yellow solid;
-		}
-		
-		.interest{
-			margin-top: -10px;
-		}
-		
-		.interest p{
-			text-align: center;
-			color: white;
-			font-size: 25px;
-			text-decoration: underline;
-		}
-		
-		.interest ul{
-			color: white;
-			text-align: left;
-			font-size: 20px;
-			position: relative;
-			left: 50px;
-		}
-		
-		.interest ul, td{
-			text-shadow: 1px 1px 1px black;
-		}
-
-		.interest table{
-			border-radius: 100px; 
-			color: #f2f2f2;
-			text-align: center;
-			margin: 8px;
-		}
 	
-		.film{
-			background: #efc050;
-			width: 240px;
-		}
-		
-		.run{
-			background: #d4a6c8;
-			width: 200px;
-		}
-		
-		.fight{
-			background: #b93a32;
-			width: 290px;
-		}
-		
-		.film:hover, .run:hover, .fight:hover, a:hover{
-			transition-delay: 0.07s;
-			transition-duration: 0.4s;
-		}
+	@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Dancing+Script');
 
-		.film:hover{
-			background: #ac8939;	
-		}
+	body{
+		margin: 4px;
+		border: 3px solid grey;
+		max-width: 1366px;
+		max-height: 1000px;
+		min-width: 1365px;
+	}
+	
+	.common{
+		font-family: 'Cormorant Garamond', serif;
+	}
+
+	.head{
+		display: flex;
+		justify-content: center;
+		background: #3d4f5b;
+		color: white;
+		font-size: 30px;
+		font-family: 'Dancing Script', cursive;
+	}
+
+	.info{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: stretch;
+	}
+	
+	.left{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	    background: linear-gradient(83deg, rgba(0,0,0,1) 0%, rgba(227,227,227,1) 100%, rgba(227,227,227,1) 100%);
+	}
+
+	.left img{
+		width: 180px;
+		height: 180px;
+		border: 3px #c7c7c7 solid;
+		border-radius: 77px 77px 77px 77px;
+		margin: 40px;
+	}
+
+	.left > p{
+		width: 150px;
+		color: white;
+		font-size: 50px;
+		border-bottom: 2px solid yellow;
+		margin-left: 50px;
+		margin-right: 10px;
+	}
+
+	.interests p, .left p{
+		text-shadow: 2px 2px 3px black;
+	}
+
+	.interests p {
+		display: flex;
+		color: white;
+		text-decoration: underline;
+		justify-content: center;
+		font-size: 25px;
+	}
+
+	table{
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-bottom: 3px;
+		color: white;
+		border-radius: 10px;
+		text-align: center;
+	}
+
+	.film {
+		background: #d4a6c8;
+		width: 250px;
+	}
+	
+	.fight{
+		background: #b93a32;
+		width: 220px;
+	}
+	.beer{
+		background: #efc050;
+		width: 80px;
+	}
 		
-		.run:hover{
-			background: #a984a0;
-		}
+	.film:hover, .beer:hover, .fight:hover, a:hover{
+		transition: 0.07s;
+		transition-duration: 0.4s;
+	}
+
+	.film:hover{
+		background: #a984a0;
+	}
 		
-		.fight:hover{
-			background: #942e28;
-		}
+	.beer:hover{
+		background: #ac8939;
+	}
 		
-		.right {
-			width: 1288px;
-			font-size: 20px;
-			margin-left: 20px;
-			color: #4c6a92;
-		}
+	.fight:hover{
+		background: #942e28;
+	}
 		
-		a:hover{
-			color: #e50000;
-		}
-		
-		.date {
-			border-bottom: 3px #456185 solid;
-		}
+	a:hover{
+		color: #e50000;
+	}
+
+	ul{
+		margin-left: 40px;
+		font-size: 18px;
+		color: white;
+	}
+
+	.right{
+		display: flex;
+		flex-direction: column;
+		margin: 20px;
+		flex-grow: 0.95;
+	}
+
+	.border{
+		border-bottom: 2px solid #4c6aba;
+	}
+
+	.right h2{
+		color: #4c6a92;
+		font-size: 23px;
+	}
+	.right p{
+		color: #4c6a92;
+		font-size: 22px;
+		margin-top: -10px;
+	}
 	</style>
 </head>
 
 <body>
-	<div class = 'common'>
-		<div class = 'curric'>
+	<div class="common">
+		<div class = "head">
 			<p>Curriculum vitae</p>
-		</div>	
-		<div class ='info'>
-			<div class = 'left'>
-				<img src="Jackie-Chan.jpg" alt="Аватар">
-				<div class = 'name'>
-					<p>Джеки Чан</p>
-				</div>
-				<div class = 'interest'>
-					<p>Люблю:</p>
-					<table class = 'film'>
-						<tr>
-							<td>Сниматься в фильмах</td>
-						</tr>
-					</table>
-					<table class = 'run'>
-						<tr>
-							<td>Бегать</td>
-						</tr>
-					</table>
-					<table class = 'fight'>	
-						<tr>
-							<td>Драться</td>
-						</tr>
-					</table>
-					<p>Контакты</p>
+		</div>
+	
+		<div class = "info">
+			<div class = "left">
+			<img src="Jackie-Chan.jpg" alt="Аватар">
+			<p>Джеки Чан</p>
+			<div class="interests">
+				<p>Люблю:</p>
+				<table class="film">
+					<tr>
+						<td>Сниматься в фильмах</td>
+					</tr>
+				</table>
+				<table class="fight">
+					<tr>
+						<td>Драться</td>
+					</tr>
+				</table>
+				<table class="beer">
+					<tr>
+						<td>Пить пиво</td>
+					</tr>
+				</table>
+				<p>Контакты:</p>
 					<ul>
 						<li><a href = "https://www.facebook.com/jackie/" target="_blank">Facebook</a></li>
 						<li><a href = "https://twitter.com/eyeofjackiechan" target="_blank">Twitter</a></li>
 						<li><a href="https://ru.wikipedia.org/wiki/%D0%A7%D0%B0%D0%BD,_%D0%94%D0%B6%D0%B5%D0%BA%D0%B8" target="_blank">Википедия</a></li>
 					</ul>
-				</div>	
-			</div>	
-			<div class='right'>
-				<div class = 'date'>
-					<h2>Дата рождения:</h2>
-					<p>7 апреля 1954 года</p>
-					<h2>Место рождения:</h2>
-					<p>Пик Виктория, Гон Конг</p>
-				</div>
-				<div class = 'date'>
-					<h2>Лучшие мои фильмы:</h2>
-					<p>- Доспехи Бога</p>
-					<p>- Смокинг</p>
-					<p>- Миф</p>
-				</div>
-				<div class = 'date'>
-					<h2>Обо мне:</h2>
-					<p>- Не пью</p>
-					<p>- Не курю</p>
-					<p>- Занимаюсь боевыми искусствами</p>
-				</div>
+			</div>
+			</div>
+			<div class="right">
+			<div class="border">
+				<h2>Дата рождения:</h2>
+				<p>7 апреля 1954 года</p>
+				<h2>Место рождения:</h2>
+				<p>Пик Виктория, Гон Конг</p>
+			</div>
+			<div class="border">
+				<h2>Лучшие мои фильмы:</h2>
+				<p>- Доспехи Бога</p>
+				<p>- Смокинг</p>
+				<p>- Миф</p>
+			</div>
+			<div class="border">
+				<h2>Обо мне:</h2>
+				<p>- Не пью</p>
+				<p>- Не курю</p>
+				<p>- Занимаюсь боевыми искусствами</p>
+			</div>
 			</div>
 		</div>
-    </div>
+	</div>
 </body>
 </html>
